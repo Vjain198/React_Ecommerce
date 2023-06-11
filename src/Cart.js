@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 const Cart = () => {
-  return <Wrapper></Wrapper>;
-};
+  return <Wrapper></Wrapper>
+}
 
 const Wrapper = styled.section`
   padding: 9rem 0;
@@ -177,6 +177,6 @@ const Wrapper = styled.section`
       }
     }
   }
-`;
+`
 
-export default Cart;
+export default Cart
