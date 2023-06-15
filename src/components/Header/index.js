@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
-import NavBar from '../Navbar'
+import Nav from '../Navbar'
 
 const Header = () => {
   const MainHeader = styled.header`
@@ -22,7 +22,7 @@ const Header = () => {
       <NavLink to='/'>
         <img src='./images/logo.png' alt='logo' />
       </NavLink>
-      <NavBar />
+      <Nav />
     </MainHeader>
   )
 }

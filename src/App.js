@@ -10,6 +10,8 @@ import Product from './Product'
 import { GlobalStyle } from './GlobalStyle'
 import { ThemeProvider } from 'styled-components'
 import Header from './components/Header'
+import Footer from './components/Footer'
+import ErrorPage from './ErrorPage'
 
 const App = () => {
   const theme = {
@@ -49,7 +51,9 @@ const App = () => {
           <Route path='/cart' element={<Cart />} />
           <Route path='/products' element={<ProductsList />} />
           <Route path='/product/:id' element={<Product />} />
+          <Route path='*' element={<ErrorPage />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </ThemeProvider>
   )

@@ -1,7 +1,8 @@
 import React from 'react'
+import HeroSection from './components/HeroSection'
 
 const About = () => {
-  return <div>About</div>
+  return <HeroSection name='React Ecommerce Store' />
 }
 
 export default About
