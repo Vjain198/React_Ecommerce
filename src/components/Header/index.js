@@ -1,7 +1,7 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-import styled from 'styled-components'
-import Nav from '../Navbar'
+import React from "react";
+import { NavLink } from "react-router-dom";
+import styled from "styled-components";
+import Nav from "../Navbar";
 
 const Header = () => {
   const MainHeader = styled.header`
@@ -14,17 +14,18 @@ const Header = () => {
     position: relative;
 
     .logo {
-      height: 5rem;
+      height: 25rem;
+      width: 25rem;
     }
-  `
+  `;
   return (
     <MainHeader>
-      <NavLink to='/'>
-        <img src='./images/logo.png' alt='logo' />
+      <NavLink to="/">
+        <img src="./images/logo.png" alt="logo" className="logo" />
       </NavLink>
       <Nav />
     </MainHeader>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
